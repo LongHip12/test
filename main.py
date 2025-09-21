@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from flask import Flask
 import threading
+import os
 
 app = Flask(__name__)
 
@@ -16,7 +17,7 @@ def run_web():
 threading.Thread(target=run_web).start()
 
 
-TOKEN = "BOT_TOKEN"
+TOKEN = os.getenv"BOT_TOKEN"
 
 intents = discord.Intents.default()
 intents.message_content = True  
