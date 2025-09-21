@@ -17,7 +17,7 @@ def run_web():
 threading.Thread(target=run_web).start()
 
 
-TOKEN = os.getenv"BOT_TOKEN"
+TOKEN = os.getenv("BOT_TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True  
